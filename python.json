@@ -42,5 +42,14 @@
 			"",
 		],
 		"description": "urls.py file template"
+	},
+
+	"Delete migrations": {
+		"prefix": "delmig",
+		"body": [
+			"find . -type d -name migrations -exec rm -v -rf {} +",
+			"find . -type d -name __pycache__ -exec rm -v -rf {} +",
+		],
+		"description": "A Unix terminal command to delete all migrations."
 	}
 }
